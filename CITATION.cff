@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: Natural-Disasters-Analysis-in-South-Eastern-Asia
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Muhammad Murtaza Ali
+    family-names: Zaidi
+    name-particle: Syed
+    email: murtaza.zaidi@uni-potsdam.de
+  - given-names: Chohyun
+    family-names: Kim
+    email: chohyun.kim@uni-potsdam.de
+  - given-names: Hana
+    family-names: Halitim
+    email: hana.halitim@uni-potsdam.de
+  - given-names: Mohamed
+    family-names: Boulhen
+    email: mohamed.boulhen@uni-potsdam.de
+  - given-names: Nebil
+    family-names: Hussien
+    email: nebil.hussien@uni-potsdam.de
+repository-code: >-
+  https://gitup.uni-potsdam.de/zaidi/research-software-engineering-project-2
+license: MIT

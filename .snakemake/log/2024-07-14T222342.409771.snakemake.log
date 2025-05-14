@@ -1,0 +1,35 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                                   count
+----------------------------------  -------
+calculate_natural_disaster_changes        1
+total                                     1
+
+Select jobs to execute...
+
+[Sun Jul 14 22:23:43 2024]
+rule calculate_natural_disaster_changes:
+    input: results/clean_data.xlsx
+    output: results/natural_disaster_changes.csv
+    jobid: 0
+    reason: Missing output files: results/natural_disaster_changes.csv
+    resources: tmpdir=/tmp
+
+[Sun Jul 14 22:23:43 2024]
+Error in rule calculate_natural_disaster_changes:
+    jobid: 0
+    input: results/clean_data.xlsx
+    output: results/natural_disaster_changes.csv
+
+RuleException:
+WorkflowError in file /home/murtaza/research-software-engineering-project-2/Snakefile, line 33:
+Failed to open source file /home/murtaza/research-software-engineering-project-2/python3 src/geological_analysis/calculate_natural_disaster_changes.py
+FileNotFoundError: [Errno 2] No such file or directory: '/home/murtaza/research-software-engineering-project-2/python3 src/geological_analysis/calculate_natural_disaster_changes.py'
+  File "/home/murtaza/research-software-engineering-project-2/Snakefile", line 33, in __rule_calculate_natural_disaster_changes
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-07-14T222342.409771.snakemake.log

@@ -1,0 +1,6 @@
+Building DAG of jobs...
+MissingInputException in rule load_data in file /home/murtaza/research-software-engineering-project-2/Snakefile, line 13:
+Missing input files for rule load_data:
+    output: data/raw_data.csv
+    affected files:
+        ../data/rse.xlsx
